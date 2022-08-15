@@ -1,28 +1,42 @@
-# ![jao Minecraft Server Logo](https://user-images.githubusercontent.com/23224932/42416047-36adc45a-829f-11e8-9d05-46d566c437e8.png)
+# Nuxt 3 Minimal Starter
 
-[jao Minecraft Server](https://jaoafa.com) 公式Webサイトのリポジトリ。
+Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
-## Build Setup
+## Setup
+
+Make sure to install the dependencies:
 
 ```bash
-# install dependencies
-$ yarn install
+# yarn
+yarn install
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+# npm
+npm install
 
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+# pnpm
+pnpm install --shamefully-hoist
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Development Server
 
-## Members
+Start the development server on http://localhost:3000
 
-|![](https://avatars0.githubusercontent.com/u/23224932?s=80&v=4)|![](https://avatars2.githubusercontent.com/u/8929706?s=80&v=4)|
-|:--:|:--:|
-|[Hiratake](https://github.com/Hiratake)<br />Admin / Designer|[Tomachi](https://github.com/book000)<br />Admin / Developer|
+```bash
+npm run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+npm run build
+```
+
+Locally preview production build:
+
+```bash
+npm run preview
+```
+
+Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.

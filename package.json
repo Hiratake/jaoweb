@@ -1,11 +1,12 @@
 {
   "name": "@jaoafa/jaoweb",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "jao Minecraft Server Website",
   "keywords": [
     "jaoafa",
     "vue",
-    "nuxt"
+    "nuxt",
+    "website"
   ],
   "homepage": "https://jaoafa.com/",
   "bugs": "https://github.com/jaoafa/jaoweb/issues",
@@ -13,58 +14,21 @@
   "contributors": [
     {
       "name": "Hiratake",
-      "url": "https://hiratake.xyz/"
-    },
-    {
-      "name": "Tomachi",
-      "url": "https://tomacheese.com/"
+      "url": "https://hiratake.dev"
     }
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/jaoafa/jaoweb.git"
   },
-  "dependencies": {
-    "@nuxt/content": "^1.14.0",
-    "@nuxtjs/axios": "^5.13.6",
-    "@nuxtjs/sitemap": "^2.4.0",
-    "core-js": "^3.18.1",
-    "nuxt": "^2.15.8",
-    "prism-themes": "^1.9.0",
-    "vue-scrollto": "^2.20.0"
-  },
   "devDependencies": {
-    "@commitlint/cli": "^13.2.1",
-    "@commitlint/config-conventional": "^13.2.0",
-    "@nuxtjs/eslint-config": "^6.0.1",
-    "@nuxtjs/eslint-module": "^3.0.2",
-    "@nuxtjs/google-analytics": "^2.4.0",
-    "@nuxtjs/stylelint-module": "^4.0.0",
-    "babel-eslint": "^10.1.0",
-    "cross-env": "^7.0.2",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-nuxt": "^2.0.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "fibers": "^5.0.0",
-    "husky": "^7.0.2",
-    "prettier": "^2.4.1",
-    "sass": "^1.42.1",
-    "sass-loader": "^10.1.1",
-    "stylelint": "^13.13.1",
-    "stylelint-config-prettier": "^8.0.2",
-    "stylelint-config-recess-order": "^2.5.0",
-    "stylelint-config-standard": "^22.0.0",
-    "typescript": "^4.4.3"
+    "nuxt": "3.0.0-rc.8"
   },
   "scripts": {
-    "dev": "cross-env NODE_ENV=development HOST=0.0.0.0 PORT=3000 BASE_URL=http://localhost:3000 nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
-    "lint": "yarn lint:js && yarn lint:style",
-    "prepare": "husky install"
-  }
+    "preview": "nuxt preview"
+  },
+  "private": true
 }
